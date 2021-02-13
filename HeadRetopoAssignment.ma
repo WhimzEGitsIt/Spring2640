@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: HeadRetopoAssignment.ma
-//Last modified: Thu, Feb 11, 2021 06:32:10 PM
+//Last modified: Sat, Feb 13, 2021 10:41:01 AM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -16,14 +16,14 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "82F5B627-6849-E37E-94C9-E19441C0B030";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 14.730587155144917 13.574263604622203 45.030296971016931 ;
-	setAttr ".r" -type "double3" 1080.2616468383383 -3225.3999996140351 359.99999839190696 ;
+	setAttr ".t" -type "double3" 15.802525326538044 -3.8329917615829956 83.287028455719764 ;
+	setAttr ".r" -type "double3" 1090.46164722566 -3227.3999924741051 359.99999992594633 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3158F1B9-5F43-5636-6CEE-428460FB517A";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 37.784244419347573;
+	setAttr ".coi" 78.234936852729419;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -2830,7 +2830,7 @@ createNode mesh -n "polySurfaceShape10" -p "polySurface8";
 	setAttr ".vnm" 0;
 createNode transform -n "pSphere1";
 	rename -uid "CAA2E801-5D48-B34C-AADD-CE85C5A626A5";
-	setAttr ".t" -type "double3" -83.070587478856538 16.882566447700384 7.1412407400076177 ;
+	setAttr ".t" -type "double3" 2.1597574237456478 16.646732195954421 7.0612662751567132 ;
 	setAttr ".r" -type "double3" 90 0 0 ;
 	setAttr ".s" -type "double3" 1.2646871957247054 1.2646871957247054 1.2646871957247054 ;
 createNode mesh -n "pSphereShape1" -p "pSphere1";
